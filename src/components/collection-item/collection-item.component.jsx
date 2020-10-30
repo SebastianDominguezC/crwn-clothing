@@ -7,7 +7,7 @@ import { addItem } from '../../redux/cart/cart.actions';
 
 import './collection-item.styles.scss';
 
-const CollectionTiem = ({ item, addItem, }) => {
+const CollectionTiem = ({ item, addItem }) => {
     const { id, name, price, imageUrl } = item;
     return (
         <div className="collection-item" onClick={() => addItem(item)}>
